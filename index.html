@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Portafolio</h1>
+
+        <button id="toggle-theme">🌙 Modo Oscuro</button>
+
+        <div class="formulario">
+            <input type="text" id="nombre" placeholder="Tu Nombre">
+            <input type="text" id="titulo" placeholder="Tu Profesión">
+            <textarea id="descripcion" placeholder="Breve descripción"></textarea>
+            <input type="text" id="proyectos" placeholder="Proyectos (separados por comas)">
+            <button id="generar">Generar Portafolio</button>
+        </div>
+
+        <div id="portafolio-preview" class="portafolio oculto">
+            <h2 id="preview-nombre"></h2>
+            <h3 id="preview-titulo"></h3>
+            <p id="preview-descripcion"></p>
+            <h4>Proyectos:</h4>
+            <ul id="preview-proyectos"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
